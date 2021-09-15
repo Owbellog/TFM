@@ -29,7 +29,7 @@ def get_prospectos():
     return outp
 
 
-datos=pd.read_csv('bank-additional-full.csv', sep = ';')
+datos=pd.DataFrame(get_prospectos())
 
 var_obj=datos['y']
 
